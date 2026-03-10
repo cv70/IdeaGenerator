@@ -1,0 +1,303 @@
+.page {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.hero {
+  border-radius: 20px;
+  padding: 1.6rem;
+  background: linear-gradient(120deg, rgba(11, 64, 52, 0.9), rgba(184, 227, 206, 0.75));
+  color: #05221b;
+  animation: reveal 420ms ease-out;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(5, 34, 27, 0.35);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  margin: 0.7rem 0 0.4rem;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+}
+
+.sub {
+  margin: 0;
+  max-width: 70ch;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(5, 34, 27, 0.12);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 1fr;
+}
+
+.topicInput,
+.angleSelect,
+.primary,
+.ghost,
+.tag,
+.mini {
+  font: inherit;
+}
+
+.topicInput,
+.angleSelect {
+  width: 100%;
+  border: 1px solid #b7cfc6;
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
+  background: #f7fbf9;
+}
+
+.primary,
+.ghost {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.primary {
+  background: #0f6a58;
+  color: #f6fffc;
+  font-weight: 700;
+}
+
+.ghost {
+  border: 1px solid #b7cfc6;
+  background: #f7fbf9;
+  color: #194439;
+}
+
+.error {
+  color: #8f1f15;
+  margin: 0.7rem 0 0;
+}
+
+.resultWrap,
+.favorites {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(5, 34, 27, 0.12);
+  border-radius: 16px;
+  padding: 1rem;
+  animation: reveal 460ms ease-out;
+}
+
+.resultHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.resultHeader h2 {
+  margin: 0;
+}
+
+.resultHeader p {
+  margin: 0.2rem 0 0;
+  color: #2e5d51;
+}
+
+.tagRow {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.9rem 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid #b7cfc6;
+  background: #f7fbf9;
+  color: #194439;
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+.tag.active {
+  background: #194439;
+  border-color: #194439;
+  color: #f1fff8;
+}
+
+.clusters {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cluster h3 {
+  margin: 0 0 0.6rem;
+  color: #104235;
+}
+
+.clusterHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.cards {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.ideaCard {
+  border: 1px solid #d7e4df;
+  border-radius: 12px;
+  padding: 0.8rem;
+  background: #fcfffd;
+}
+
+.ideaHead {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.ideaHead h4 {
+  margin: 0;
+}
+
+.mini {
+  border: 1px solid #bad2c8;
+  background: #eff8f4;
+  color: #194439;
+  border-radius: 10px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.ideaCard p {
+  margin: 0.5rem 0;
+  color: #2e5d51;
+}
+
+dl {
+  margin: 0.2rem 0 0.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.5rem;
+}
+
+dt {
+  color: #356b5d;
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+}
+
+.chipRow {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  border: 1px solid #c5d9d1;
+}
+
+.business {
+  background: #edf6ff;
+  color: #17456a;
+}
+
+.opportunity {
+  background: #fff5e8;
+  color: #6b4414;
+}
+
+.savedList {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.savedItem {
+  border: 1px solid #d7e4df;
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: #fcfffd;
+}
+
+.savedItem h4,
+.savedItem p {
+  margin: 0;
+}
+
+.savedItem p {
+  color: #2e5d51;
+  margin-top: 0.4rem;
+  margin-bottom: 0.55rem;
+}
+
+.empty {
+  margin: 0;
+  color: #3f6c61;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(15, 106, 88, 0.35);
+  outline-offset: 2px;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .page {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .hero,
+  .panel,
+  .resultWrap {
+    grid-column: 1;
+  }
+
+  .favorites {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: start;
+    position: sticky;
+    top: 1rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr 180px 180px;
+  }
+}

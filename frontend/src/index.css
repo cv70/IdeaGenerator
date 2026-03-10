@@ -1,0 +1,29 @@
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #082a22;
+  background:
+    radial-gradient(circle at 10% 10%, #f3fce8 0%, transparent 35%),
+    radial-gradient(circle at 90% 5%, #d7eee4 0%, transparent 32%),
+    linear-gradient(140deg, #f7fbf8 0%, #eef6f2 45%, #e9f2ef 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 1rem;
+}
